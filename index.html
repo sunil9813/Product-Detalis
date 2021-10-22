@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="image/p1.jpg" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="image/p1.jpg" onclick="img('image/p1.jpg')">
+          <img src="image/p2.jpg" onclick="img('image/p2.jpg')">
+          <img src="image/p3.jpg" onclick="img('image/p3.jpg')">
+          <img src="image/p4.jpg" onclick="img('image/p4.jpg')">
+          <img src="image/p5.jpg" onclick="img('image/p5.jpg')">
+          <img src="image/p6.jpg" onclick="img('image/p6.jpg')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Beats Solo3 Wireless</h3>
+        <h4> <small>$</small>999.99 </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h5>Color-Rose Gold</h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+
+        <button>Add to Bag</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
